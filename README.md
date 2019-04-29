@@ -35,7 +35,7 @@ You will be asked to fill in some config values:
 * `Databricks Token` (see [here](https://docs.databricks.com/api/latest/authentication.html#generate-a-token))
 * `Cluster ID` (see [here](https://docs.databricks.com/user-guide/faq/workspace-details.html#cluster-url))
 * `Org ID` (see `?o=orgId` in your Databricks URL)
-* `Port`: here you can use port 8787 since we are working on Azure
+* `Port`: here you should use port 8787, since we are working on Azure
 
 ## Run tests
 Run the following command to test your setup is up and working:
@@ -43,7 +43,7 @@ Run the following command to test your setup is up and working:
 $ databricks-connect test
 ```
 
-If the configured Databricks cluster is not running, it will start automatically (it might take some time).
+If the remote Databricks cluster is not running, it will start automatically (it might take some time).
 
 ## Enjoy!
 Run the following command:
@@ -53,8 +53,6 @@ $ jupyter notebook
 And from your browser navigate to `localhost:8888`.
 
 ## Example notebook
-The notebook `test notebook.ipynb` contains some example commands to set up your Databricks environment from Jupyter itself.
+The notebook `test notebook.ipynb` contains some example commands to set up your Databricks environment from Jupyter itself, by defining the `SparkContext`, as well as `dbutils` and `sqlContext`. 
 
-For example, it defines your `SparkContext`, as well as `dbutils` and the `sqlContext`. 
-
-On Databricks they are automatically defined, but they need to be manually created in your local Jupyter notebook.
+On Databricks, they are automatically defined, but they need to be specified by hand in your local Jupyter notebook.
