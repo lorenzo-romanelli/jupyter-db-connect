@@ -9,9 +9,10 @@ $ git clone https://github.com/lorenzo-romanelli/jupyter-db-connect.git
 ```
 
 ### 2. Create and activate a virtual environment
+Remember, when creating the virtual environment you need to install either __Python 2.7__ or __Python 3.5__, depending on which version is running on the cluster.
 ```bash
 $ cd jupyter-db-connect
-$ virtualenv env
+$ virtualenv -p /usr/bin/python3.5 env
 $ cd env
 $ source bin/activate
 ```
