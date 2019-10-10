@@ -33,7 +33,7 @@ You will be asked to fill in some config values:
 
 * `Databricks Host`, e.g. https://westeurope.azuredatabricks.net
 * `Databricks Token` (see [here](https://docs.databricks.com/api/latest/authentication.html#generate-a-token))
-* `Cluster ID` (see [here](https://docs.databricks.com/user-guide/faq/workspace-details.html#cluster-url))
+* `Cluster ID` (see [here](https://docs.databricks.com/workspace/workspace-details.html#cluster-url))
 * `Org ID` (see `?o=orgId` in your Databricks URL)
 * `Port`: here you should use port 8787, since we are working on Azure
 
